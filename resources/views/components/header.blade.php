@@ -3,7 +3,7 @@
           <div class="logo d-flex gap-3 align-items-center">
               <a href="{{route('index')}}">
                   <img src="{{ asset('public/assets/img/favicon.png') }}" alt="" class="img-fluid"></a>
-              <h1 class="text-light"><a href="{{ route('index') }}"><span>WorldCraft.in</span></a></h1>
+              <h1 class="text-light"><a href="{{ route('index') }}"><span>WorldCraft.staging</span></a></h1>
           </div>
           <nav id="navbar" class="navbar">
               <ul>
