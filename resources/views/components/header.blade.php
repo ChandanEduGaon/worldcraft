@@ -2,8 +2,8 @@
       <div class="container d-flex justify-content-between align-items-center">
           <div class="logo d-flex gap-3 align-items-center">
               <a href="{{route('index')}}">
-                  <img src="{{ asset('public/assets/img/favicon.png') }}" alt="" class="img-fluid"></a>
-              <h1 class="text-light"><a href="{{ route('index') }}"><span>Chanchal Code</span></a></h1>
+                  <img src="{{ asset('public/logo.svg') }}" alt="" class="img-fluid"></a>
+              <h1 class="text-light"><a href="{{ route('index') }}"><span>WorldCraft</span></a></h1>
           </div>
           <nav id="navbar" class="navbar">
               <ul>
