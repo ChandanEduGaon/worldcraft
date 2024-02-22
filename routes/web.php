@@ -22,6 +22,19 @@ Route::get('/team', [MainController::class, 'team'])->name('team');
 Route::get('/blog', [MainController::class, 'blog'])->name('blog');
 Route::get('/contact_us', [MainController::class, 'contact_us'])->name('contact_us');
 
-Route::get('/admin', [MainController::class, 'admin'])->name('admin.dashboard');
-Route::get('/users', [MainController::class, 'users'])->name('admin.users');
-Route::get('/cms_header', [MainController::class, 'cms_header'])->name('admin.cms.header');
+
+Route::group(['prefix' => 'world_craft_admin' , 'as' => 'world_craft_admin.'], function () {
+    Route::group(['prefix' => 'home' , 'as' => 'home.'], function () {
+        Route::get('/', [\App\Http\Controllers\world_craft_admin\HomeController::class, 'index'])->name('list');
+        Route::get('add', [\App\Http\Controllers\world_craft_admin\HomeController::class, 'create'])->name('add');
+        Route::post('add_data', [\App\Http\Controllers\world_craft_admin\HomeController::class, 'store'])->name('add.data');
+        Route::get('edit/{id}', [\App\Http\Controllers\world_craft_admin\HomeController::class, 'edit'])->name('edit');
+    });
+
+
+    Route::get('/', [\App\Http\Controllers\world_craft_admin\MainController::class, 'admin'])->name('/');
+    Route::get('/admin', [\App\Http\Controllers\world_craft_admin\MainController::class, 'admin'])->name('dashboard');
+    Route::get('/users', [\App\Http\Controllers\world_craft_admin\MainController::class, 'users'])->name('users');
+    Route::get('/cms_header', [\App\Http\Controllers\world_craft_admin\MainController::class, 'cms_header'])->name('cms.header');
+
+});

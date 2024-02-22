@@ -1,6 +1,6 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
     <div class="app-brand demo">
-        <a href="{{ route('admin.dashboard') }}" class="app-brand-link d-flex align-items-center gap-2">
+        <a href="{{ route('world_craft_admin.dashboard') }}" class="app-brand-link d-flex align-items-center gap-2">
             <img src="{{ asset('public/logo.svg') }}" alt="" class="img-fluid"></a>
             <span class="menu-text fw-bolder ms-2" style="font-size: 1.6rem;">WorldCraft</span>
         </a>
@@ -14,8 +14,8 @@
 
     <ul class="menu-inner py-1">
         <!-- Dashboard -->
-        <li class="menu-item {{ $page == 'admin.dashboard' ? 'active' : '' }}">
-            <a href="{{ route('admin.dashboard') }}" class="menu-link">
+        <li class="menu-item {{ $page == 'world_craft_admin.dashboard' ? 'active' : '' }}">
+            <a href="{{ route('world_craft_admin.dashboard') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
             </a>
@@ -24,7 +24,7 @@
             <span class="menu-header-text">CMS</span>
         </li>
         <!-- WorldCraft CMS -->
-        <li class="menu-item {{ $tab == 'cms_worldcraft' ? 'open' : '' }}">
+        <li class="menu-item {{ $tab == 'home' ? 'open' : '' }}">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
                 <div data-i18n="Layouts">WorldCraft</div>
@@ -32,7 +32,7 @@
 
             <ul class="menu-sub">
                 <li class="menu-item {{ $page == 'admin.cms_header' ? 'active' : '' }}">
-                    <a href="{{ route('admin.cms.header') }}" class="menu-link">
+                    <a href="{{ route('world_craft_admin.cms.header') }}" class="menu-link">
                         <div data-i18n="Without menu">Header</div>
                     </a>
                 </li>
@@ -41,9 +41,9 @@
                         <div data-i18n="Without menu">Footer</div>
                     </a>
                 </li>
-                <li class="menu-item">
-                    <a href="layouts-without-menu.html" class="menu-link">
-                        <div data-i18n="Without menu">Home</div>
+                <li class="menu-item {{ $page == 'home.list' ? 'active' : '' }}">
+                    <a href="{{route('world_craft_admin.home.list')}}" class="menu-link">
+                        <div data-i18n="Without menu">Home Content</div>
                     </a>
                 </li>
                 <li class="menu-item">
@@ -80,8 +80,8 @@
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">CRM</span>
         </li>
-        <li class="menu-item {{ $page == 'admin.users' ? 'active' : '' }}">
-            <a href="{{ route('admin.users') }}" class="menu-link">
+        <li class="menu-item {{ $page == 'world_craft_admin.users' ? 'active' : '' }}">
+            <a href="{{ route('world_craft_admin.users') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-user"></i>
                 <div data-i18n="Basic">Users</div>
             </a>
