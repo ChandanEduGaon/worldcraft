@@ -21,3 +21,7 @@ Route::get('/services', [MainController::class, 'services'])->name('services');
 Route::get('/team', [MainController::class, 'team'])->name('team');
 Route::get('/blog', [MainController::class, 'blog'])->name('blog');
 Route::get('/contact_us', [MainController::class, 'contact_us'])->name('contact_us');
+
+Route::get('/admin', [MainController::class, 'admin'])->name('admin.dashboard');
+Route::get('/users', [MainController::class, 'users'])->name('admin.users');
+Route::get('/cms_header', [MainController::class, 'cms_header'])->name('admin.cms.header');

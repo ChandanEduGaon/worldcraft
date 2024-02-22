@@ -1,5 +1,5 @@
 <!-- Favicons -->
-<link href="{{asset('public/assets/img/favicon.png')}}" rel="icon">
+<link href="{{asset('public/logo.png')}}" rel="icon">
 <link href="{{asset('public/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
 <!-- Google Fonts -->

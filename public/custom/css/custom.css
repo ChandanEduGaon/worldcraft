@@ -1,14 +1,15 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: rgb(231, 250, 255);
     transition: 1s linear;
 }
 
-.loading{
+.loading {
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -24,13 +25,16 @@ body{
     gap: 10px;
     flex-direction: column;
 }
-.loading .letter{
+
+.loading .letter {
     letter-spacing: 5px;
 }
-.loading .company{
+
+.loading .company {
     font-weight: 200;
     letter-spacing: 1px;
 }
+
 .loader {
     height: 2px;
     width: 200px;
