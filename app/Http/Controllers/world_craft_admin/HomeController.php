@@ -35,7 +35,7 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        upload_file($request->file('file'));
     }
 
     /**

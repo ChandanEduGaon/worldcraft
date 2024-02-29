@@ -7,6 +7,8 @@
         <title>WorldCraft</title>
     </head>
     <body class="antialiased">
-        <h1 class="bg-danger">Welcome to WorldCraft</h1>
+    <h1 class="bg-danger">Welcome to Edugaon</h1>
+    <h1 class="bg-danger">Welcome to Edugaon</h1>
+
     </body>
 </html>

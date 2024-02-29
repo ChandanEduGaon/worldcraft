@@ -31,7 +31,6 @@ Route::group(['prefix' => 'world_craft_admin' , 'as' => 'world_craft_admin.'], f
         Route::get('edit/{id}', [\App\Http\Controllers\world_craft_admin\HomeController::class, 'edit'])->name('edit');
     });
 
-
     Route::get('/', [\App\Http\Controllers\world_craft_admin\MainController::class, 'admin'])->name('/');
     Route::get('/admin', [\App\Http\Controllers\world_craft_admin\MainController::class, 'admin'])->name('dashboard');
     Route::get('/users', [\App\Http\Controllers\world_craft_admin\MainController::class, 'users'])->name('users');

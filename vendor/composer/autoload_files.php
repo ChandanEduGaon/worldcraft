@@ -39,4 +39,5 @@ return array(
     '320163ac6b93aebe3dc25b60a0533d56' => $vendorDir . '/spatie/laravel-ignition/src/helpers.php',
     '703a43f16423925131af491a3cf6f399' => $baseDir . '/app/Http/helpher/site_helpher.php',
     'fc218a9f43dcb55167fbff8cf46bf2c9' => $baseDir . '/app/Http/helpher/admin_helpher.php',
+    '14afec1de4f4a01be223461440665dea' => $baseDir . '/app/Http/helpher/common_helphr.php',
 );

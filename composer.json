@@ -31,7 +31,8 @@
         },
         "files": [
             "app/Http/helpher/site_helpher.php",
-            "app/Http/helpher/admin_helpher.php"
+            "app/Http/helpher/admin_helpher.php",
+            "app/Http/helpher/common_helphr.php"
         ]
     },
     "autoload-dev": {

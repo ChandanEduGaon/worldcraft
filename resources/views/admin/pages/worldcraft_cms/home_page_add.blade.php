@@ -36,7 +36,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="formFile" class="form-label">Site logo(as required)</label>
-                    <input class="form-control" name="logo" type="file" id="formFile"/>
+                    <input class="form-control" name="file" type="file" id="formFile"/>
                 </div>
                 <button type="submit" class="btn btn-primary float-end w-25">Save</button>
             </form>
