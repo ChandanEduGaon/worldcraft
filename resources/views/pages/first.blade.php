@@ -1,4 +1,10 @@
 @extends('master')
+
+
+@section('hero')
+    @include('components.hero')
+@endsection
+
 @section('content')
     @include('components.world_craft_loading')
 

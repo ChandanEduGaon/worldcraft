@@ -15,7 +15,7 @@ class HomeController extends Controller
     {
         $data['page'] = 'home.list';
         $data['tab'] = 'home';
-        $data['home_data'] = HomeModel::all();
+        $data['home_data'] =  [];
 
         return view('admin.pages.worldcraft_cms.home_page', $data);
 
@@ -35,7 +35,7 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        upload_file($request->file('file'));
     }
 
     /**

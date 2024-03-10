@@ -1,4 +1,7 @@
 @extends('master')
+@section('hero')
+    @include('components.hero', ['title'=> 'Contact Us', 'description'=> 'Contact us']);
+@endsection
 @section('content')
     <main id="main">
 
