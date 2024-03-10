@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/worldcra/public_html/
+    - export DEPLOYPATH=/home/worldcraft/public_html/
     - /bin/cp * $DEPLOYPATH
