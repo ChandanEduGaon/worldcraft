@@ -37,6 +37,9 @@ Route::group(['prefix' => 'world_craft_admin' , 'as' => 'world_craft_admin.'], f
     Route::get('/users', [\App\Http\Controllers\world_craft_admin\MainController::class, 'users'])->name('users');
     Route::get('/cms_header', [\App\Http\Controllers\world_craft_admin\MainController::class, 'cms_header'])->name('cms.header');
 
-    Route::get('/', [\App\Http\Controllers\world_craft_admin\ProductController::class, 'index'])->name('our_products');
+    Route::get('/our_products', [\App\Http\Controllers\world_craft_admin\ProductController::class, 'index'])->name('our_products');
+
+
+    Route::post('/add_products', [\App\Http\Controllers\world_craft_admin\ProductController::class, 'add_products'])->name('add_products');
 
 });
