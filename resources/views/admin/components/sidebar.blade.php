@@ -51,8 +51,8 @@
                         <div data-i18n="Without navbar">About</div>
                     </a>
                 </li>
-                <li class="menu-item">
-                    <a href="layouts-container.html" class="menu-link">
+                <li class="menu-item {{ $page == 'world_craft_admin.our_products' ? 'active' : '' }}">
+                    <a href="{{route('world_craft_admin.our_products')}}" class="menu-link">
                         <div data-i18n="Container">Products</div>
                     </a>
                 </li>

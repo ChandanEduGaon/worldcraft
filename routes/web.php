@@ -21,6 +21,7 @@ Route::get('/services', [MainController::class, 'services'])->name('services');
 Route::get('/team', [MainController::class, 'team'])->name('team');
 Route::get('/blog', [MainController::class, 'blog'])->name('blog');
 Route::get('/contact_us', [MainController::class, 'contact_us'])->name('contact_us');
+Route::get('/our_products', [MainController::class, 'our_products'])->name('our_products');
 
 
 Route::group(['prefix' => 'world_craft_admin' , 'as' => 'world_craft_admin.'], function () {
@@ -35,5 +36,7 @@ Route::group(['prefix' => 'world_craft_admin' , 'as' => 'world_craft_admin.'], f
     Route::get('/admin', [\App\Http\Controllers\world_craft_admin\MainController::class, 'admin'])->name('dashboard');
     Route::get('/users', [\App\Http\Controllers\world_craft_admin\MainController::class, 'users'])->name('users');
     Route::get('/cms_header', [\App\Http\Controllers\world_craft_admin\MainController::class, 'cms_header'])->name('cms.header');
+
+    Route::get('/', [\App\Http\Controllers\world_craft_admin\ProductController::class, 'index'])->name('our_products');
 
 });

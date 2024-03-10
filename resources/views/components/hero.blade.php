@@ -5,16 +5,26 @@
             <!-- Slide 1 -->
             <div class="carousel-item active">
                 <div class="carousel-container">
-                    <h2 class="animate__animated animate__fadeInDown">Welcome to <span>WorldCraft</span></h2>
-                    <p class="animate__animated animate__fadeInUp">
-                        Empower Your Vision: Our Services Redefine Digital Excellence
-                        Transform your aspirations into reality with our comprehensive suite of services. From
-                        groundbreaking web development to immersive mobile app experiences, we tailor solutions that
-                        resonate with your audience and drive tangible results. Harness the power of innovative
-                        technologies, expert craftsmanship, and unparalleled dedication as we partner with you to
-                        elevate your digital presence. Discover limitless possibilities and unlock the true potential of
-                        your business with our unmatched service offerings.
-                    </p>
+                    @if (isset($title))
+                        <h2 class="animate__animated animate__fadeInDown">
+                            <span>{{ $title }}</span>
+                        </h2>
+                        <p class="animate__animated animate__fadeInUp">
+                            {{ $description }}
+                        </p>
+                    @else
+                        <h2 class="animate__animated animate__fadeInDown">Welcome to <span>WorldCraft</span></h2>
+                        <p class="animate__animated animate__fadeInUp">
+                            Empower Your Vision: Our Services Redefine Digital Excellence
+                            Transform your aspirations into reality with our comprehensive suite of services. From
+                            groundbreaking web development to immersive mobile app experiences, we tailor solutions that
+                            resonate with your audience and drive tangible results. Harness the power of innovative
+                            technologies, expert craftsmanship, and unparalleled dedication as we partner with you to
+                            elevate your digital presence. Discover limitless possibilities and unlock the true
+                            potential of
+                            your business with our unmatched service offerings.
+                        </p>
+                    @endif
                     <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
                 </div>
             </div>

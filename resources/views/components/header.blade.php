@@ -8,6 +8,7 @@
           <nav id="navbar" class="navbar">
               <ul>
                   <li><a class="{{ (isset($page) && $page == 'index') ? 'active' : '' }}" href="{{ route('index') }}">Home</a></li>
+                  <li><a class="{{ (isset($page) && $page == 'our_products') ? 'active' : '' }}" href="{{ route('our_products') }}">Our Products</a></li>
                   <li><a class="{{ (isset($page) && $page == 'about') ? 'active' : '' }}" href="{{ route('about') }}">About</a></li>
                   <li><a class="{{ (isset($page) && $page == 'services') ? 'active' : '' }}" href="{{ route('services') }}">Services</a></li>
                   <li><a class="{{ (isset($page) && $page == 'team') ? 'active' : '' }}" href="{{ route('team') }}">Team</a></li>

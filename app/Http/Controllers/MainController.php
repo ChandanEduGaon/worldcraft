@@ -51,6 +51,14 @@ class MainController extends Controller
 
         return view('pages.contact', $data);
     }
+    public function our_products()
+    {
+        $data['page'] = 'contact';
+        $data['tab'] = '';
+        $data['home_data'] =  \DB::table('our_products')->where('status', '0')->get();
+        // dd($data);
+        return view('pages.our_products', $data);
+    }
     public function admin()
     {
         $data['page'] = 'admin.dashboard';

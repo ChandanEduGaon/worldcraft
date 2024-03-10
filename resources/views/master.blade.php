@@ -12,7 +12,7 @@
     @include('components.header')
 
 
-    @include('components.hero')
+    @yield('hero')
 
     <div id="root">
         @yield('content')

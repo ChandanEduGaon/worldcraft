@@ -6,14 +6,14 @@
             <small class="text-muted float-end">Save will update the worldcraft's header.</small>
         </div>
         <div class="card-body">
-            <form>
+            <form action="{{route('world_craft_admin.home.add.data')}}" method="POST" enctype="multipart/form-data">@csrf
                 <div class="mb-3">
                     <label class="form-label" for="basic-default-fullname">Site title</label>
                     <input type="text" class="form-control" id="basic-default-fullname" placeholder="John Doe" />
                 </div>
                 <div class="mb-3">
                     <label for="formFile" class="form-label">Site logo</label>
-                    <input class="form-control" type="file" id="formFile" />
+                    <input class="form-control" type="file" name="file_upload" id="formFile" />
                 </div>
                 <button type="submit" class="btn btn-primary float-end w-25">Save</button>
             </form>
